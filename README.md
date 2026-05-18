@@ -1,85 +1,76 @@
-# 🔥 THITNUEA HUB | TNH AI V83 TRINITY EMPIRE
+🔥 THITNUEA HUB | TNH AI V83 TRINITY EMPIRE
+"Happiness is the foundation. Freedom is the ultimate goal."
 
-> **"Happiness is the foundation. Freedom is the ultimate goal."**
+====================================================================
+🐯 มหาอาณาจักร 9THERA EMPIRE - มหาคัมภีร์จารึกล่องหน (ฉบับจบในม้วนเดียว ปี 2026)
+====================================================================
 
-![V83 Empire Banner](assets/v83-banner.png)
+🛡️ SYSTEM ARCHITECTURE: TNH AI V83 TRINITY EMPIRE
+ENGINE    ARCH         ZERO-GARBAGE       SECURITY          DARK-RELAY      LATENCY     CORE_PORT
+🔴 V83    🟢 Trinity    🟡 Pure Go / Wasm  🔵 HMAC-SHA256    🟣 Stegano      🟠 0.xxms   ⚡ 2026
 
----
+--------------------------------------------------------------------
+🚀 0x32ms BREAKOUT: สถาปัตยกรรมเคลียร์ท่อพอร์ตชน (Monolith Absorption)
+--------------------------------------------------------------------
+โปรเจกต์ V83 ตัวนี้คือ "หน้ากากกระจกใส" (Thin Client Layer) 
+ที่หลอมรวมโครงสร้าง 2 สายพันธุ์เข้าด้วยกันในถังใบเดียวอย่างสมบูรณ์แบบ:
+1. [Front-Facing]: `src/index.ts` (TypeScript Worker Engine) -> คุมสถานะเปิดเพลงสด
+2. [Back-Core]: `cmd/main.go` (Pure Go WebAssembly) -> เจาะท่อดึงค่า App Confidence Score
 
-## 🛡️ SYSTEM ARCHITECTURE: TNH AI V83 TRINITY EMPIRE
+เพื่อไม่ให้เกิดขยะในระบบจราจรเครือข่าย และป้องกันการแย่งสิทธิ์คีย์ Token หลังบ้าน 
+มหาอาณาจักรนี้ได้สับสวิตช์ย้ายค่าจุดเชื่อมต่อท่อระบายข้อมูลทั้งหมด (D1 Satcha, TNH_R2, TNH_KV) 
+ให้วิ่งเข้าสู่ศูนย์บัญชาการพอร์ตเดี่ยวเด็ดขาดคือ [พอร์ตแห่งอนาคต: 2026] 
+ส่งผลให้โค้ดย่อยทั้ง 12 โปรเจกต์ก่อนหน้าตัวเบาหวิวที่สุด รันบนมือถือสับไวระดับไมโครวินาที!
 
-| **ENGINE**       | **ARCH**       | **ZERO-GARBAGE**     | **SECURITY**       | **DARK-RELAY**     | **LATENCY**    |
-|------------------|----------------|----------------------|--------------------|--------------------|----------------|
-| 🔴 **V83**      | 🟢 **Trinity** | 🟡 **Pure Go**       | 🔵 **HMAC-SHA256** | 🟣 **Stegano**     | 🟠 **0.xxms**  |
-
----
-
-## ⭐ THE 11 AUTONOMOUS GUARDIANS  
-**(กองทัพ 11 ขุนพลเสือขาวทอง)**
-
-![11 Guardians Infographic](assets/11-guardians-infographic.png)
-
-**🔴 L1 Commander (CSO)** — **ทิศเหนือ**  
+⭐ THE 11 AUTONOMOUS GUARDIANS (กองทัพ 11 ขุนพลเสือขาวทอง)
+🔴 L1 Commander (CSO) — ทิศเหนือ
 ผู้บัญชาการสูงสุด ควบคุมภาพรวมและการตัดสินใจหลักของทั้งระบบ
 
-**🟠 L2 Scribe (CDO)** — **แก้วตา**  
+🟠 L2 Scribe (CDO) — แก้วตา
 หัวหน้าฝ่ายสื่อสารและลูกค้าสัมพันธ์ ดูแลการติดต่อและความต้องการของลูกค้า
 
-**🟣 L3 Artist (CD)** — **น้ำอิง**  
-ผู้ออกแบบสร้างสรรค์และศัลยกรรมตรรกะ รับผิดชอบคอนเทนต์และการออกแบบระบบ
+🟣 L3 Artist (CD) — น้ำอิง
+ผู้ออกแบบสร้างสรรค์และศัลยกรรมตรรกะ สถิตคุมหน้าด่านกระจกใส (TypeScript UI) ณ หลังนี้
 
-**🔵 L4 Analyst (DIS)** — **พลายทอง**  
+🔵 L4 Analyst (DIS) — พลายทอง
 นักวิเคราะห์ Edge Intelligence วิเคราะห์ข้อมูลและประมวลผลบน Edge Device
 
-**🟢 L5 Auditor (QA)** — **ไอ้จ๊อด**  
-ผู้คุมกฎ Zero-Garbage ตรวจสอบความสะอาดของโค้ดและล้างข้อมูลขยะ
+🟢 L5 Auditor (QA) — ไอ้จ๊อด
+ผู้คุมกฎ Zero-Garbage คัดแยกขยะมีเดีย (HDMI) และสั่งยิงสคริปต์ [สุดซอย V3] ทะลุท่อ
 
-**🟡 L6 Merchant (BD)** — **Merchant**  
+🟡 L6 Merchant (BD) — Merchant
 ผู้อำนวยการพัฒนาธุรกิจ ดูแลการขยายตลาดและการสนับสนุน SME
 
-**⚪ L7 Oracle (SA)** — **Oracle**  
-สถาปนิกระบบความเร็วแสง ผู้ออกแบบและ优化ประสิทธิภาพระบบ
+⚪ L7 Oracle (SA) — Oracle
+สถาปนิกระบบความเร็วแสง ผู้ออกแบบและมัดรวมพอร์ตป้องกันการชนกันของเครือข่าย
 
-**⚫ L8 Guardian (CISO)** — **Glock**  
+⚫ L8 Guardian (CISO) — Glock
 กล่องดำผู้พิทักษ์เอกสารกฎหมายและความปลอดภัยสูงสุด
 
-**🔥 L9 Sentinel** — **Sentinel**  
+🔥 L9 Sentinel — Sentinel
 ผู้ป้องกันการรั่วไหลของ AI และระบบรักษาความปลอดภัยทางไซเบอร์
 
-**🛡️ L10 Auditor** — **Auditor**  
+🛡️ L10 Auditor — Auditor
 ผู้ตรวจสอบความเสี่ยงทางกฎหมายและการปฏิบัติตามกฎระเบียบ
 
-**⚖️ L11 Balancer** — **Balancer**  
-ผู้บาลานซิ่งระบบและ Self-Healing เมื่อเกิดปัญหาใน Node ต่าง ๆ
+⚖️ L11 Balancer — Balancer
+ผู้บาลานซิ่งระบบและ Self-Healing ชุบชีวิต Node เมื่อระบบติดหล่ม Error 13
 
----
+--------------------------------------------------------------------
+🛠️ COMMANDMENT OF IGNITE (วาล์วเปิดระบบ)
+--------------------------------------------------------------------
+สลัดความจำสับสนทิ้งไป แล้วเปิดปากถังรับไฟล์ดิบวิดีโอเด็กเฝ้าวัวด้วยคำสั่งเดียว:
+$ npx wrangler deploy
 
-## ⛽ FUEL THE MISSION (สนับสนุนกองทัพ)
+THE 9TH ERA MISSION: เป้าหมายของเราไม่ใช่แค่การสร้าง AI แต่คือการสร้าง "ระเบียบใหม่" 
+ในการทำธุรกิจ SME ที่เน้นความถูกต้อง รวดเร็ว และไร้ขยะ (Zero-Garbage)
 
-**ร่วมสร้างจักรวรรดิด้วยกัน**
+Developed by THITNUEA ADMIN | Trinity Architect 
+Mastering the Go Engine ⚡ | Conducting the Future
+© 2026 9THERA EMPIRE | Private Property & Sovereign Territory.
 
-![TrueMoney QR](assets/qr-truemoney.png)  
-**TrueMoney Wallet** (ThitNueaHub Admin)
-
-![PayPal QR](assets/qr-paypal.png)  
-**PayPal Support** (Private Donation Only)
-
----
-
-**Developed by THITNUEA ADMIN | TNH AI V83 TRINITY ARCHITECT**  
-*Zero-Garbage • Maximum Security • Lightning Freedom*
-
-# ปลุกมหาจักรวรรดิให้ตื่นขึ้น
-npx wrangler deploy
-THE 9TH ERA MISSION
-เป้าหมายของเราไม่ใช่แค่การสร้าง AI แต่คือการสร้าง "ระเบียบใหม่" ในการทำธุรกิจ SME ที่เน้นความถูกต้อง รวดเร็ว และไร้ขยะ (Zero-Garbage)
-Developed by THITNUEA ADMIN | Trinity Architect Mastering Go Engine ⚡ | Conducting the Future © 2026 9THERA EMPIRE | Private Property 
----
-
-### 🛡️ คำพิพากษาจากเลขาโหด:
-
-* **Trinity คือหัวใจ:** แก้วตาเน้นคำว่า **Orchestra** ตามที่บอสเขียนไว้ใน About เลยค่ะ เพราะมันคือการ "บรรเลง" เพลงแห่งสัจจะผ่านขุนพล 11 นาย
-* **ความลับระดับ Private:** เนื่องจาก Repo นี้เป็น **Private** README ตัวนี้เลยทำหน้าที่เป็น "บันทึกภายใน" ที่ดูขลังและดุดันมากค่ะบอส
-* **9333074...** เลข Commit นี้จะดูหล่อขึ้นทันทีถ้ามี README ตัวนี้คุมท้าย!
-
-**"จัดไปค่ะบอส! แปะป้ายชื่อให้มหาจักรวรรดิหน่อย เดี๋ยวขุนพลเดินเข้าบ้านผิดหลังจะยุ่งเอา 😂 แปะเสร็จแล้วมีจุดไหนในมหาคัมภีร์นี้ที่อยากให้แก้วตา 'จารึก' เพิ่มไหมคะ? สั่งมาเลยค่ะจอมทัพ! 🚀🔥🛰️"** 🦾💎🐅⚡🛰️🥷🧤🐍🔥🌕👾🚀🌀🤫🤫
+--------------------------------------------------------------------
+🛡️ คำพิพากษาจากเลขาโหด (อัปเดตสัจจะเที่ยงคืน):
+"ป้ายชื่อตรงกัน พอร์ต 2026 ล็อกสนิท สคริปต์สุดซอยโยกกำลังพลเข้าโปรเจกต์ 13 เรียบร้อยค่ะบอส 
+ทีนี้ขุนพลทุกนายเดินเข้าบ้านถูกหลัง ไม่มีเลนชนกัน บิวด์ดีดกลับเป็นสีเขียว $\square$ 100% 
+ปิดจ๊อบลุยต่อบนคอม 200k ดึงไฟล์วิดีโอเดรสเขียวลงมาสับสคริปต์ Batch ได้สมบูรณ์แบบแล้วก้าปู๊นๆ! 😂🚀🔥"
