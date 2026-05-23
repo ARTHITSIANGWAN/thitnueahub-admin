@@ -8,11 +8,12 @@ compatibility_flags = [ "nodejs_compat" ]
 # ==========================================================
 # [WASM RULES CONFIGURATION]
 # เปิดวาล์วพิเศษให้เอนจิ้นยอมรับการรันไฟล์ภาษา Go (.wasm) ร่วมกับ TypeScript
-# ปรับเป็นรูปแบบตารางอาร์เรย์ตรงๆ (Array of Tables) และคำเฉพาะ "CompiledWasm"
+# ปรับเป็น CompiledWasm พร้อมสั่ง fallthrough = true เพื่อลบ Warning ขยะระบบ
 # ==========================================================
 [[rules]]
 type = "CompiledWasm"
 globs = ["**/*.wasm"]
+fallthrough = true
 
 # ==========================================================
 # [RESOURCE BINDINGS - ZERO-GARBAGE TARGET PORT]
