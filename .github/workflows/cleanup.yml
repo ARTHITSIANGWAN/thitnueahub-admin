@@ -1,5 +1,9 @@
+# 🌱 [TNH-AI-V83-TRINITY-EMPIRE | L5-JOD-MISSION] 🫟
 name: TNH_AI_V83_CLEANUP_MISSION
-on: [workflow_dispatch] # บอสกดสั่งงานเองจากมือได้เลยก้า
+on: [workflow_dispatch]
+
+permissions:
+  contents: write # ให้สิทธิ์ไอ้จ๊อดเขียนลง Repo ได้
 
 jobs:
   jod_cleaner_task:
@@ -10,21 +14,25 @@ jobs:
 
       - name: 👾 Step 2: ไอ้จ๊อดล้างขยะและย้ายไฟล์
         run: |
-          echo "ไอ้จ๊อดมาแล้วโว้ยฯ กำลังย้ายของ..."
-          # ตรวจสอบว่ามีไฟล์หลงยุคไหม
-          mkdir -p assets/rainbow/  # สร้างที่อยู่ใหม่ให้สายรุ้ง
+          echo "ไอ้จ๊อดมาแล้วโว้ยฯ กำลังตรวจสอบและจัดระเบียบ..."
+          mkdir -p assets/rainbow/
           
-          # ท่าไม้ตายไอ้จ๊อด: ย้ายทุกอย่างที่ขวางทาง Build
-          if [ -d "_site" ]; then rm -rf _site; fi
+          # ท่าไม้ตายไอ้จ๊อด: ลบขยะสะสม
+          if [ -d "_site" ]; then rm -rf _site; echo "ขยะ _site ถูกทำลายแล้ว"; fi
           
-          # ย้ายไฟล์จากจุด A ไป B (บอสเปลี่ยนชื่อไฟล์ตรงนี้ได้ก้า)
-          # mv source_file assets/rainbow/ 
-
+          # เพิ่มการทำความสะอาดไฟล์ temp ที่อาจค้าง
+          find . -name "*.tmp" -type f -delete
+          
       - name: ✅ Step 3: บันทึกสัจจะลงมหาจักรวรรดิ
         run: |
           git config --global user.name "TNH-AI-JOD-L5"
           git config --global user.email "jod@tnh.ai"
           git add .
-          git commit -m "L5: ล้างป่าช้าและจัดระเบียบ Assets เรียบร้อยก้าบอส! 🤫" || echo "ไม่มีอะไรให้ย้ายก้า"
-          git push
-          
+          # เช็กก่อนว่ามีอะไรต้อง commit ไหม เพื่อป้องกันการ fail
+          if ! git diff-index --quiet HEAD --; then
+            git commit -m "L5: ล้างป่าช้าและจัดระเบียบ Assets เรียบร้อยก้าบอส! 🤫"
+            git push
+          else
+            echo "มหาอาณาจักรสะอาดอยู่แล้ว ไม่จำเป็นต้อง Commit ก้า"
+          fi
+# 🫟 [TNH-AI-V83-TRINITY-EMPIRE | END] 🌱
