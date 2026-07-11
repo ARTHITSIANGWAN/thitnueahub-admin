@@ -1,0 +1,37 @@
+package registry
+
+import (
+	"os"
+	"text/template"
+)
+
+const agentTemplate = `---
+level: {{.Level}}
+role: {{.Role}}
+name: {{.Name}}
+base: {{.Base}}
+---
+
+# UNIT: {{.Name}}
+**Role:** {{.Role}}
+**Function:** {{.Function}}
+
+## MISSION STATUS
+- [ ] V83 Protocol Engaged
+- [ ] Operational
+`
+
+func GenerateAgentProfile(a AgentProfile, outputPath string) error {
+	tmpl, err := template.New("profile").Parse(agentTemplate)
+	if err != nil {
+		return err
+	}
+
+	f, err := os.Create(outputPath)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+
+	return tmpl.Execute(f, a)
+}
