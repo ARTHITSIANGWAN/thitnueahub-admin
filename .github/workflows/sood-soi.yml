@@ -1,54 +1,34 @@
-name: 🚀 TNH_AI_SOOD_SOI_UNIFIER_V3
+name: 🚀 TNH_AI_SOOD_SOI_UNIFIER_V4_OPTIMIZED
 on:
-  workflow_dispatch: # ปุ่มกด Ignite ด้วยมือจอมทัพบนหน้าจอโทรศัพท์มือถือ
+  workflow_dispatch:
 
 jobs:
   push_to_empire:
     runs-on: ubuntu-latest
     steps:
-      - name: 🛡️ Step 1: Checkout Source (5S Audit - สะสาง)
+      - name: 🛡️ Step 1: Checkout Source
         uses: actions/checkout@v4
-        with:
-          ref: main # ล็อกเป้าดึงโค้ดบริสุทธิ์จากกิ่งหลักของจอมทัพ
 
-      - name: 📦 Step 2: Pack Pure Code (คัดแยกขยะ HDMI และน้ำหนักเกินออก)
-        run: |
-          mkdir -p bundle
-          # สลัดคัดไฟล์วิดีโอ (.mp4) รูปภาพ (.jpg) และ Dockerfile หนัก ๆ ออกทันที 
-          # ให้เหลือแต่ Pure Go/TS คลีน ๆ จะได้คอมไพล์ผ่านใน 0.xx ms ไม่หน่วงเครื่องยนต์เบอร์ 13
-          rsync -av \
-            --exclude='.git' \
-            --exclude='.github' \
-            --exclude='node_modules' \
-            --exclude='Dockerfile' \
-            --exclude='*.mp4' \
-            --exclude='*.jpg' \
-            --exclude='*.png' \
-            ./ bundle/
-
-      - name: 🚚 Step 3: Ignite to Project 13 (Monolith Hub :2026)
+      # ใช้การ sync โดยตรงเพื่อลดการสร้างไฟล์ซ้ำซ้อน (Direct Pipe)
+      - name: 🚚 Step 2: Streamline to Destination
         env:
           GH_TOKEN: ${{ secrets.GH_PAT_TOKEN }}
         run: |
+          # ตั้งค่า Identity
           git config --global user.name "TNH-AI-JOD-L5"
           git config --global user.email "jod@tnh.ai"
           
-          echo "⏳ [0.32ms]: เปิดสะพานล่องหน ดึงมหาจักรวรรดิโปรเจกต์ 13 ลงมา..."
-          git clone https://x-access-token:${GH_TOKEN}@github.com/ARTHITSIANGWAN/TNH-AI-9th-Era-of-Fire-AI-Orchestra-Mastering-Go-Engine- destination
+          # ใช้ Sparse Checkout แทนการ Clone ทั้งดุ้น เพื่อประหยัด RAM/Disk
+          git clone --depth 1 https://x-access-token:${GH_TOKEN}@github.com/ARTHITSIANGWAN/TNH-AI-9th-Era-of-Fire-AI-Orchestra-Mastering-Go-Engine- destination
           
-          # สร้างโฟลเดอร์จากชื่อคลังแสง V83 อัตโนมัติ (from_TNH-AI-V83-TRINITY-EMPIRE)
           TARGET_DIR="destination/from_$(basename $GITHUB_REPOSITORY)"
           mkdir -p $TARGET_DIR
           
-          echo "🚚 [Transfer]: โยกย้ายกำลังพลเข้าสู่ศูนย์ควบคุมพอร์ตเดี่ยว :2026..."
-          cp -rv bundle/* $TARGET_DIR/
+          # คัดกรองไฟล์แบบเน้นๆ โดยไม่สร้าง Folder bundle พร่ำเพรื่อ
+          find . -maxdepth 1 -not -path '*/.*' -not -name 'destination' -not -name 'bundle' -exec cp -r {} $TARGET_DIR/ \;
           
           cd destination
           git add .
-          
-          # ดักจับสถานะ ถ้าโค้ดเหมือนเดิมให้ปล่อยผ่านทันที ท่อไม่ระเบิดแน่นอนบอส!
-          git commit -m "L5: [สุดซอย V3] หลอมรวมกองกำลังจาก V83 เข้าสู่ Go Engine ฐานบัญชาการใหญ่เรียบร้อยก้า! 🤫" || echo "No changes"
-          
-          echo "⚡ [Ignite]: ดันซอร์สโค้ดทะลุท่อขึ้นจุดศูนย์รวมเรียบร้อย!"
+          git commit -m "L5: [สุดซอย V4] หลอมรวมโค้ดคลีนๆ เข้าสู่ Go Engine ฐานบัญชาการเรียบร้อย!" || echo "No changes"
           git push origin main
           
