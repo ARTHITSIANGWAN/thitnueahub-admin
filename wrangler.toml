@@ -1,6 +1,6 @@
 #:schema node_modules/wrangler/config-schema.json
 # มหาอาณาจักร TNH AI - PROJECT PROFILE ENGINE (Public Access)
-name = "tnh-ai-project-profile"
+name = "thitnueahub-admin"
 main = "src/index.ts"
 compatibility_date = "2026-05-06"
 compatibility_flags = [ "nodejs_compat" ]
