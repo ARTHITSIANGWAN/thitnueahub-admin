@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
-	"THITNUEAHUB-ADMIN/pkg/registry"
+	"Thitnueahub-Admin/pkg/registry"
 )
 
 func main() {
