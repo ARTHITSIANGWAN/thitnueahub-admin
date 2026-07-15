@@ -1,6 +1,3 @@
-package registry
-
-import "fmt"
 
 func GenerateMarkdown(a AgentProfile) string {
 	return fmt.Sprintf(`# 🛡️ SOVEREIGN: %s
