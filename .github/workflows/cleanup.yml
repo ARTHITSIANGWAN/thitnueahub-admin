@@ -1,6 +1,6 @@
-# 🌱 [TNH-AI-V83-TRINITY-EMPIRE | L5-JOD-MISSION] 🫟
+# 🌱 THITNUEAHUB-ADMIN | L5-JOD-MISSION] 🫟
 name: TNH_AI_V83_CLEANUP_MISSION
-on: [workflow_dispatch]
+on: [workflow_dispatch
 
 permissions:
   contents: write # ให้สิทธิ์ไอ้จ๊อดเขียนลง Repo ได้
@@ -16,7 +16,7 @@ jobs:
         run: |
           echo "ไอ้จ๊อดมาแล้วโว้ยฯ กำลังตรวจสอบและจัดระเบียบ..."
           mkdir -p assets/rainbow/
-          
+        
           # ท่าไม้ตายไอ้จ๊อด: ลบขยะสะสม
           if [ -d "_site" ]; then rm -rf _site; echo "ขยะ _site ถูกทำลายแล้ว"; fi
           
