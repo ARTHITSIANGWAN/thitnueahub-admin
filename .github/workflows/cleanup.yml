@@ -1,5 +1,5 @@
 # 🌱 THITNUEAHUB-ADMIN | L5-JOD-MISSION] 🫟
-name: TNH_AI_V83_CLEANUP_MISSION
+name: THITNUEAHUB-ADMIN
 on: [workflow_dispatch
 
 permissions:
