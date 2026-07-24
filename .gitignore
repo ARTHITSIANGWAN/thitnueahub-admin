@@ -1,48 +1,15 @@
-# 🌱 [thitnueahub-admin | gitignore hardening] 🫟
-
-# Binaries for Go
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-*.test
-*.out
-coverage.*
-*.coverprofile
-profile.cov
-
-# Go Workspaces
-go.work
-go.work.sum
-
-# --- TRINITY EMPIRE ADDITIONS ---
-
-# Cloudflare Workers (Infrastructure Security)
-.wrangler/
-.dev.vars
-.mf/
-dist/
-build/
-
-# OS Metadata (System Hygiene)
-.DS_Store
-Thumbs.db
-ehthumbs.db
-
-# Editor/IDE Configs (Keep your environment private)
-.vscode/
-.idea/
-.project
-.classpath
-.settings/
-
-# Secret & Environment Files (Zero-Trust)
+# Security & Credentials
 .env
-.env.*
-*.secret
-*.key
 *.pem
-secrets/
+*.key
+SECURITY_SECRET
+thitnuea_knowledge.db
 
-# 🫟 [THITNUEAHUB-ADMIN | END] 🌱
+# Executables / Binaries
+thn_master
+*.exe
+*.out
+
+# Logs
+*.log
+tunnel.log
